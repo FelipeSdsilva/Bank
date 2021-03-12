@@ -1,8 +1,7 @@
 package application;
 
 import java.util.*;
-import entities.Account;
-
+import entities.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -31,6 +30,9 @@ public class App {
             holder = new Account(accountnumber,name,value);
             
         }else
+        {
+            holder = new Account(accountnumber,name);
+        }
 
         System.out.println("Account data: ");
         System.out.println(holder);
@@ -43,5 +45,7 @@ public class App {
         value = sc.nextDouble();
         holder.whitdraw(value);
         System.out.println(holder);
+
+        sc.close();
     }
 }
