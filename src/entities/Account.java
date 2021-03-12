@@ -45,7 +45,7 @@ public class Account {
         return "Account [ " 
                 + idCont + ", Holder: " 
                 + name + ", Balance: " 
-                + balance + "]";
+                + String.format("%.2f",balance) + "]";
     }
     
     
